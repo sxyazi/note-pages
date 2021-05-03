@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Elasticsearch | NOTES</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.245af9f3.css" as="style"><link rel="preload" href="/assets/js/app.47b1b0a6.js" as="script"><link rel="preload" href="/assets/js/7.16c01cf3.js" as="script"><link rel="preload" href="/assets/js/2.20e9de90.js" as="script"><link rel="preload" href="/assets/js/23.732b7952.js" as="script"><link rel="prefetch" href="/assets/js/10.db4cc26d.js"><link rel="prefetch" href="/assets/js/11.2ed22de8.js"><link rel="prefetch" href="/assets/js/12.62a0a556.js"><link rel="prefetch" href="/assets/js/13.0858e295.js"><link rel="prefetch" href="/assets/js/14.956a68a9.js"><link rel="prefetch" href="/assets/js/15.0551feca.js"><link rel="prefetch" href="/assets/js/16.2bb9d48e.js"><link rel="prefetch" href="/assets/js/17.4a32e6b5.js"><link rel="prefetch" href="/assets/js/18.39869701.js"><link rel="prefetch" href="/assets/js/19.d84569cc.js"><link rel="prefetch" href="/assets/js/20.160fc4d0.js"><link rel="prefetch" href="/assets/js/21.c2645d24.js"><link rel="prefetch" href="/assets/js/22.22615a22.js"><link rel="prefetch" href="/assets/js/24.2aca5c18.js"><link rel="prefetch" href="/assets/js/25.450ae92d.js"><link rel="prefetch" href="/assets/js/26.e0e3a7ea.js"><link rel="prefetch" href="/assets/js/27.38f85c3a.js"><link rel="prefetch" href="/assets/js/28.f42dd2b4.js"><link rel="prefetch" href="/assets/js/29.78994492.js"><link rel="prefetch" href="/assets/js/3.5758be2e.js"><link rel="prefetch" href="/assets/js/30.dfda4c14.js"><link rel="prefetch" href="/assets/js/31.1190d066.js"><link rel="prefetch" href="/assets/js/32.3c88339a.js"><link rel="prefetch" href="/assets/js/33.89bdd171.js"><link rel="prefetch" href="/assets/js/34.261422ba.js"><link rel="prefetch" href="/assets/js/35.6179745c.js"><link rel="prefetch" href="/assets/js/36.055149f1.js"><link rel="prefetch" href="/assets/js/37.1f477558.js"><link rel="prefetch" href="/assets/js/38.bd6ee664.js"><link rel="prefetch" href="/assets/js/39.e889e77d.js"><link rel="prefetch" href="/assets/js/4.abc1756b.js"><link rel="prefetch" href="/assets/js/40.84bea1f2.js"><link rel="prefetch" href="/assets/js/41.138e7eba.js"><link rel="prefetch" href="/assets/js/42.dac929ab.js"><link rel="prefetch" href="/assets/js/43.d8909ff6.js"><link rel="prefetch" href="/assets/js/44.6d9578ec.js"><link rel="prefetch" href="/assets/js/45.04a1fdc7.js"><link rel="prefetch" href="/assets/js/46.d07b3dfb.js"><link rel="prefetch" href="/assets/js/47.2fd91c9d.js"><link rel="prefetch" href="/assets/js/48.82ab1cfa.js"><link rel="prefetch" href="/assets/js/49.897a77c3.js"><link rel="prefetch" href="/assets/js/5.cdbc79c8.js"><link rel="prefetch" href="/assets/js/50.8951a096.js"><link rel="prefetch" href="/assets/js/51.ae634f87.js"><link rel="prefetch" href="/assets/js/52.253bade8.js"><link rel="prefetch" href="/assets/js/53.4212e89e.js"><link rel="prefetch" href="/assets/js/54.249a2890.js"><link rel="prefetch" href="/assets/js/55.5f0edaf8.js"><link rel="prefetch" href="/assets/js/56.0dc1bc36.js"><link rel="prefetch" href="/assets/js/57.7315860d.js"><link rel="prefetch" href="/assets/js/58.17c95e5e.js"><link rel="prefetch" href="/assets/js/59.89faf239.js"><link rel="prefetch" href="/assets/js/6.d464ee56.js"><link rel="prefetch" href="/assets/js/60.b962ca9f.js"><link rel="prefetch" href="/assets/js/61.c65a54f9.js"><link rel="prefetch" href="/assets/js/62.988e1995.js"><link rel="prefetch" href="/assets/js/63.ce463e04.js"><link rel="prefetch" href="/assets/js/64.3c0a71e5.js"><link rel="prefetch" href="/assets/js/65.c0f8e5ce.js"><link rel="prefetch" href="/assets/js/66.dcff2ab9.js"><link rel="prefetch" href="/assets/js/67.653ac2d4.js"><link rel="prefetch" href="/assets/js/68.074f2c10.js"><link rel="prefetch" href="/assets/js/69.45e374bc.js"><link rel="prefetch" href="/assets/js/70.c14301a8.js"><link rel="prefetch" href="/assets/js/71.935f056f.js"><link rel="prefetch" href="/assets/js/72.d6d3a426.js"><link rel="prefetch" href="/assets/js/73.e403bc23.js"><link rel="prefetch" href="/assets/js/74.cdb45d1e.js"><link rel="prefetch" href="/assets/js/75.87e33ec3.js"><link rel="prefetch" href="/assets/js/76.70daa023.js"><link rel="prefetch" href="/assets/js/77.c3e51b0c.js"><link rel="prefetch" href="/assets/js/78.035054d1.js"><link rel="prefetch" href="/assets/js/79.6bfa50ec.js"><link rel="prefetch" href="/assets/js/8.cdbae0d1.js"><link rel="prefetch" href="/assets/js/80.3e04c6a2.js"><link rel="prefetch" href="/assets/js/81.03f04db3.js"><link rel="prefetch" href="/assets/js/82.dac69f37.js"><link rel="prefetch" href="/assets/js/9.42d36685.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.245af9f3.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">NOTES</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Elasticsearch</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/elasticstack/elasticsearch.html#elastic-stack" class="sidebar-link">Elastic Stack</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/elasticstack/elasticsearch.html#常见术语" class="sidebar-link">常见术语</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/elasticstack/elasticsearch.html#index" class="sidebar-link">Index</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#创建索引" class="sidebar-link">创建索引</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#删除索引" class="sidebar-link">删除索引</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#查看索引" class="sidebar-link">查看索引</a></li></ul></li><li><a href="/elasticstack/elasticsearch.html#document" class="sidebar-link">Document</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#创建文档-指定-id" class="sidebar-link">创建文档（指定 ID）</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#创建文档-不指定-id" class="sidebar-link">创建文档（不指定 ID）</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#删除文档" class="sidebar-link">删除文档</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#通过-id-查询文档" class="sidebar-link">通过 ID 查询文档</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#通过条件查询文档" class="sidebar-link">通过条件查询文档</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#批量操作文档" class="sidebar-link">批量操作文档</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#批量查询文档" class="sidebar-link">批量查询文档</a></li></ul></li><li><a href="/elasticstack/elasticsearch.html#analyze" class="sidebar-link">Analyze</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#内建分析器" class="sidebar-link">内建分析器</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#指定分析器分析" class="sidebar-link">指定分析器分析</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#指定分词器分析" class="sidebar-link">指定分词器分析</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#指定索引字段分析" class="sidebar-link">指定索引字段分析</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#创建自定义分析器" class="sidebar-link">创建自定义分析器</a></li></ul></li><li><a href="/elasticstack/elasticsearch.html#mapping" class="sidebar-link">Mapping</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#显式映射创建索引" class="sidebar-link">显式映射创建索引</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#添加字段到现存映射" class="sidebar-link">添加字段到现存映射</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#查看索引的映射关系" class="sidebar-link">查看索引的映射关系</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#指定映射字段的参数" class="sidebar-link">指定映射字段的参数</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#自定义索引映射模板" class="sidebar-link">自定义索引映射模板</a></li></ul></li><li><a href="/elasticstack/elasticsearch.html#search" class="sidebar-link">Search</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#查询形式" class="sidebar-link">查询形式</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#运行机制" class="sidebar-link">运行机制</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#uri-search" class="sidebar-link">URI Search</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#request-body-search" class="sidebar-link">Request Body Search</a></li><li class="sidebar-sub-header"><a href="/elasticstack/elasticsearch.html#相关性算分" class="sidebar-link">相关性算分</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="elasticsearch"><a href="#elasticsearch" class="header-anchor">#</a> Elasticsearch</h1> <h2 id="elastic-stack"><a href="#elastic-stack" class="header-anchor">#</a> Elastic Stack</h2> <ul><li>Kibana：数据探索与可视化分析</li> <li>Elasticsearch：数据存储、查询与分析</li> <li>Beats：数据收集与处理</li> <li>Logstash：收集、解析和转换日志</li></ul> <h2 id="常见术语"><a href="#常见术语" class="header-anchor">#</a> 常见术语</h2> <ul><li>文档 Document：用户存储在 ES 中的数据</li> <li>索引 Index：由具有相同字段的文档列表组成</li> <li>节点 Node：一个 ES 的运行实例，是集群的构成单元</li> <li>集群 Cluster：由一个或多个节点组成，对外提供服务</li> <li>映射 Mapping：定义文档字段的存储和索引方式</li> <li>正排索引：从文档 ID 到文档内容的关联关系</li> <li>倒排索引：从文档内容到文档 ID 的关联关系</li> <li>分析器 Analyzer：包含 字符过滤器、分词器、词元过滤器</li> <li>字符过滤器 Character Filters：针对原始文本处理，如去除 HTML 标记
+<ul><li>HTML Strip：去除 HTML 标签和转换 HTML 实体</li> <li>Mapping：进行字符替换操作</li> <li>Pattern Replace：进行正则替换操作</li></ul></li> <li>分词器 Tokenizer：将原始文本按照一定规则切分为单词
+<ul><li>Standard：按照单词切分</li> <li>Letter：按照非字母切分</li> <li>Whitespace：按照空格切分</li> <li>UAX URL Email：与 standard 相同，但不会切分邮箱和 URL</li> <li>N-Gram、Edge N-Gram：连词切分</li> <li>Path hierarchy：按文件路径切分</li></ul></li> <li>词元过滤器 Token Filters：针对 tokenizer 的单词再加工，如转小写、删除或新增等
+<ul><li>Lowercase：转小写</li> <li>Stop：删除结束词</li> <li>N-Gram、Edge N-Gram：连词切分</li> <li>Synonym：添加近义词</li></ul></li></ul> <h2 id="index"><a href="#index" class="header-anchor">#</a> Index</h2> <h3 id="创建索引"><a href="#创建索引" class="header-anchor">#</a> 创建索引</h3> <div class="language-http extra-class"><pre class="language-http"><code>PUT /foo
+</code></pre></div><h3 id="删除索引"><a href="#删除索引" class="header-anchor">#</a> 删除索引</h3> <div class="language-http extra-class"><pre class="language-http"><code>DELETE /foo
+</code></pre></div><h3 id="查看索引"><a href="#查看索引" class="header-anchor">#</a> 查看索引</h3> <div class="language-http extra-class"><pre class="language-http"><code>GET /_cat/indices
+</code></pre></div><h2 id="document"><a href="#document" class="header-anchor">#</a> Document</h2> <h3 id="创建文档-指定-id"><a href="#创建文档-指定-id" class="header-anchor">#</a> 创建文档（指定 ID）</h3> <div class="language-json extra-class"><pre class="language-json"><code>PUT /foo/<span class="token number">1</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Peter&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="创建文档-不指定-id"><a href="#创建文档-不指定-id" class="header-anchor">#</a> 创建文档（不指定 ID）</h3> <div class="language-json extra-class"><pre class="language-json"><code>POST /foo
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Peter&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;age&quot;</span><span class="token operator">:</span> <span class="token number">20</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="删除文档"><a href="#删除文档" class="header-anchor">#</a> 删除文档</h3> <div class="language-http extra-class"><pre class="language-http"><code>DELETE /foo/1
+</code></pre></div><h3 id="通过-id-查询文档"><a href="#通过-id-查询文档" class="header-anchor">#</a> 通过 ID 查询文档</h3> <div class="language-http extra-class"><pre class="language-http"><code>GET /foo/1
+</code></pre></div><h3 id="通过条件查询文档"><a href="#通过条件查询文档" class="header-anchor">#</a> 通过条件查询文档</h3> <div class="language-json extra-class"><pre class="language-json"><code>GET /foo/_search
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;term&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="批量操作文档"><a href="#批量操作文档" class="header-anchor">#</a> 批量操作文档</h3> <div class="language-json extra-class"><pre class="language-json"><code>POST _bulk
+
+<span class="token comment">// 替换文档</span>
+<span class="token punctuation">{</span><span class="token property">&quot;index&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">&quot;field1&quot;</span><span class="token operator">:</span> <span class="token string">&quot;value1&quot;</span><span class="token punctuation">}</span>
+
+<span class="token comment">// 删除文档</span>
+<span class="token punctuation">{</span><span class="token property">&quot;delete&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+
+<span class="token comment">// 创建文档</span>
+<span class="token punctuation">{</span><span class="token property">&quot;create&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;3&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">&quot;field1&quot;</span><span class="token operator">:</span> <span class="token string">&quot;value3&quot;</span><span class="token punctuation">}</span>
+
+<span class="token comment">// 更新文档</span>
+<span class="token punctuation">{</span><span class="token property">&quot;update&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span> <span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+<span class="token punctuation">{</span><span class="token property">&quot;doc&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token property">&quot;field2&quot;</span><span class="token operator">:</span> <span class="token string">&quot;value2&quot;</span><span class="token punctuation">}</span><span class="token punctuation">}</span>
+</code></pre></div><h3 id="批量查询文档"><a href="#批量查询文档" class="header-anchor">#</a> 批量查询文档</h3> <div class="language-json extra-class"><pre class="language-json"><code>GET _mget
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;docs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;_index&quot;</span><span class="token operator">:</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;_id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="analyze"><a href="#analyze" class="header-anchor">#</a> Analyze</h2> <h3 id="内建分析器"><a href="#内建分析器" class="header-anchor">#</a> 内建分析器</h3> <p><strong>Standard</strong>：默认分析器，按 Unicode 文本分段算法分词，支持多语言，小写处理</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;lowercase&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;stop (Disabled by default)&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Simple</strong>：按照非字母切分，小写处理</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lowercase&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Whitespace</strong>：按照空格切分</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;whitespace&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Stop</strong>：与 Simple 分析器一致，但加入了删除 an/the 这类的修饰词</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lowercase&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stop&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Keyword</strong>：不分词，直接将输入作为一个单词</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Pattern</strong>：使用正则表达式分词</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pattern&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;lowercase&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;stop (Disabled by default)&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>Language</strong>：针对特定语言的分词器</p> <h3 id="指定分析器分析"><a href="#指定分析器分析" class="header-anchor">#</a> 指定分析器分析</h3> <div class="language-json extra-class"><pre class="language-json"><code>POST _analyze
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;analyzer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hello World!&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="指定分词器分析"><a href="#指定分词器分析" class="header-anchor">#</a> 指定分词器分析</h3> <div class="language-json extra-class"><pre class="language-json"><code>POST _analyze
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;standard&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;lowercase&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hello World!&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="指定索引字段分析"><a href="#指定索引字段分析" class="header-anchor">#</a> 指定索引字段分析</h3> <div class="language-json extra-class"><pre class="language-json"><code>POST /foo/_analyze
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;field&quot;</span><span class="token operator">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;text&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Janey Holmes&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="创建自定义分析器"><a href="#创建自定义分析器" class="header-anchor">#</a> 创建自定义分析器</h3> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><br><br><br><br><br><div class="highlighted"> </div><br><div class="highlighted"> </div><br><br><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-json"><code>PUT test
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;analysis&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;analyzer&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;my_custom_analyzer&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;custom&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;char_filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;emoticons&quot;</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;punctuation&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;lowercase&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;english_stop&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;tokenizer&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;punctuation&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pattern&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;pattern&quot;</span><span class="token operator">:</span> <span class="token string">&quot;[ .,!?]&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;char_filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;emoticons&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;mapping&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token string">&quot;:) =&gt; _happy_&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;:( =&gt; _sad_&quot;</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;filter&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;english_stop&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stop&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;stopwords&quot;</span><span class="token operator">:</span> <span class="token string">&quot;_english_&quot;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="mapping"><a href="#mapping" class="header-anchor">#</a> Mapping</h2> <h3 id="显式映射创建索引"><a href="#显式映射创建索引" class="header-anchor">#</a> 显式映射创建索引</h3> <div class="language-json extra-class"><pre class="language-json"><code>PUT /test
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;age&quot;</span><span class="token operator">:</span>   <span class="token punctuation">{</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;integer&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;email&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;name&quot;</span><span class="token operator">:</span>  <span class="token punctuation">{</span> <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span> <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="添加字段到现存映射"><a href="#添加字段到现存映射" class="header-anchor">#</a> 添加字段到现存映射</h3> <div class="language-json extra-class"><pre class="language-json"><code>PUT /test/_mapping
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;employee-id&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;index&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="查看索引的映射关系"><a href="#查看索引的映射关系" class="header-anchor">#</a> 查看索引的映射关系</h3> <div class="language-http extra-class"><pre class="language-http"><code>GET /test/_mapping
+</code></pre></div><h3 id="指定映射字段的参数"><a href="#指定映射字段的参数" class="header-anchor">#</a> 指定映射字段的参数</h3> <ul><li><strong>dynamic</strong>：设置是否可以动态新增字段
+<ul><li><em>true</em>：自动添加（默认）；</li> <li><em>false</em>：忽略新字段添加，这些字段将不会被索引，因此无法通过其来搜索。但仍然会出现在 <code>_source</code> 中；</li> <li><em>strict</em>：严格模式，检测到为在 mapping 中定义的字段直接报错；</li></ul></li> <li><strong>copy_to</strong>：将多个字段复制到同一组字段中，以便将其作为单个字段进行查询</li> <li><strong>index</strong>：控制是否对字段值建立索引</li> <li><strong>index_options</strong> <ul><li><em>docs</em>：只记录文档 ID；</li> <li><em>freqs</em>：记录文档 ID、词频；</li> <li><em>positions</em>：记录文档 ID、词频、词的位置（默认）；</li> <li><em>offsets</em>：记录文档 ID、词频、词的位置、词的开始和结束字符偏移；</li></ul></li> <li><strong>null_value</strong>：当遇到 <code>null</code> 值时的默认值</li></ul> <div class="language-json extra-class"><div class="highlight-lines"><br><br><br><div class="highlighted"> </div><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><div class="highlighted"> </div><div class="highlighted"> </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div><pre class="language-json"><code>PUT test
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dynamic&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;properties&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;index&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;copy_to&quot;</span><span class="token operator">:</span> <span class="token string">&quot;full_name&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;index_options&quot;</span><span class="token operator">:</span> <span class="token string">&quot;positions&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;last_name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;copy_to&quot;</span><span class="token operator">:</span> <span class="token string">&quot;full_name&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;null_value&quot;</span><span class="token operator">:</span> <span class="token string">&quot;NULL&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;full_name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;text&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+PUT test/_doc/<span class="token number">1</span>
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;first_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;John&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;last_name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Smith&quot;</span>
+<span class="token punctuation">}</span>
+
+GET test/_search
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;match&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;full_name&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token string">&quot;John Smith&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;operator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;and&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="自定义索引映射模板"><a href="#自定义索引映射模板" class="header-anchor">#</a> 自定义索引映射模板</h3> <p>将所有 string 类型映射为 keyword</p> <div class="language-json extra-class"><pre class="language-json"><code>PUT test
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dynamic_templates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;strings_as_keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;match_mapping_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;mapping&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;keyword&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>匹配字段名以 <code>long_</code> 开头且不以 <code>_text</code> 结尾的 string 映射为 long</p> <div class="language-json extra-class"><pre class="language-json"><code>PUT test
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;mappings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dynamic_templates&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        <span class="token property">&quot;longs_as_strings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+          <span class="token property">&quot;match_mapping_type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;string&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;match&quot;</span><span class="token operator">:</span>   <span class="token string">&quot;long_*&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;unmatch&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*_text&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;mapping&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;long&quot;</span>
+          <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="search"><a href="#search" class="header-anchor">#</a> Search</h2> <h3 id="查询形式"><a href="#查询形式" class="header-anchor">#</a> 查询形式</h3> <div class="language-http extra-class"><pre class="language-http"><code>GET /_search
+GET /my_index/_search
+GET /my_index,my_index2/_search
+GET /my_*/_search
+</code></pre></div><p>通过 URI 查询</p> <div class="language-http extra-class"><pre class="language-http"><code>GET /my_index/_search?q=user:alfred
+</code></pre></div><p>使用 Request Body 查询</p> <div class="language-json extra-class"><pre class="language-json"><code>GET /my_index/_search
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;query&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;term&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token property">&quot;user&quot;</span><span class="token operator">:</span> <span class="token string">&quot;alfred&quot;</span> <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="运行机制"><a href="#运行机制" class="header-anchor">#</a> 运行机制</h3> <p>Search 在执行时分为两个阶段：</p> <ul><li>Query：用户向集群发起一个查询请求，协调节点（Coordination Node）在含有数据的主副分片中随机选择 N 个分片，并向这些分片发送 Search Request，被选中的分片会执行查询查找匹配文档并按指定的排序规则排序，然后将 from+size 个文档 ID 值返回给协调节点。实际协调节点拿到了 <code>(from+size)*N</code> 个文档，最后协调节点再对这些文档排序拿出 from 到 size 个文档。</li> <li>Fetch：协调节点向相关的 N 个分片发送 <code>multi_get</code> 请求，拿到文档详细数据，然后拼接返回的数据给客户。</li></ul> <h3 id="uri-search"><a href="#uri-search" class="header-anchor">#</a> URI Search</h3> <p>通过 URI Query 参数实现简单搜索，常用参数如下：</p> <ul><li><p>q 指定查询语句</p> <ul><li><strong>泛查询</strong>：alfred 等效在所有字段去匹配 term</li> <li><strong>指定字段</strong>：field:alfred</li> <li><strong>Term</strong>：alfred way 等效于 alfred OR way</li> <li><strong>Phrase</strong>：&quot;alfred way&quot; 词语匹配，要求先后顺序</li> <li><strong>Group 分组匹配</strong>：
+<ul><li>(quick OR brown) AND fox</li> <li>status:(active OR padding) title:(full text search)</li></ul></li> <li><strong>布尔操作符</strong>：AND(&amp;&amp;)，OR(||)，NOT(!)，区分大小写
+<ul><li>name:(tom NOT lee)</li></ul></li> <li><strong>must、must_not</strong>：分别对应于 <code>+</code> <code>-</code> <ul><li>name:(tom +lee -alfred)</li> <li>name:((lee &amp;&amp; !alfred) || (tom &amp;&amp; lee &amp;&amp; !alfred))</li> <li><code>+</code> 在 URL 中会被解析为空格，需要使用 <code>%2B</code> 代替</li></ul></li> <li><strong>范围查询</strong>：开区间{}，闭区间[]
+<ul><li>age:[1 TO 10] 意为 1&lt;=age&lt;=10</li> <li>age:[1 TO 10} 意为 1&lt;=age&lt;10</li> <li>age:[1 TO ] 意为 age&gt;=1</li> <li>age:[* TO 10] 意为 age&lt;=10</li> <li>也支持 age:(&gt;=1 &amp;&amp; &lt;=10) 或 age:(+&gt;=1 +&lt;=10)</li></ul></li> <li><strong>通配符查询</strong>：<code>?</code> 代表一个字符，<code>*</code> 代表多个字符
+<ul><li>name:t?m</li> <li>name:tom*</li> <li>name:t*m</li> <li>通配符匹配效率低，占用内存多，不建议使用</li></ul></li> <li><strong>正则表达式匹配</strong>：
+<ul><li>name:/[mb]oat/</li></ul></li> <li><strong>模糊匹配</strong>：匹配与 roam 差 1 个字符的词，如 foam、roams 等
+<ul><li>name:roam~1</li></ul></li> <li><strong>近似度查询</strong>：以 term 为单词差异比较，如 &quot;quick fox&quot;、&quot;quick brown fox&quot; 都会匹配
+<ul><li>&quot;fox quick&quot;~5</li></ul></li></ul></li></ul> <ul><li>df 参与匹配的字段，若不指定则查询所有</li> <li>sort 排序</li> <li>timeout 超时时间，默认不超时</li> <li>from, size 分页</li></ul> <h3 id="request-body-search"><a href="#request-body-search" class="header-anchor">#</a> Request Body Search</h3> <ul><li><strong>match</strong>：全文搜索</li> <li><strong>match_phrase</strong>：短语匹配</li> <li><strong>term</strong>：精确值查找</li> <li><strong>terms</strong>：查找多个精确值</li> <li><strong>range</strong>：范围查询</li> <li><strong>query_string</strong>：通过查询字符串匹配文档</li> <li><strong>simple_query_string</strong>：通过简单查询语法匹配文档，具有有限容错性</li> <li><strong>constant_score</strong>：将查询结果得分设置为 1</li> <li><strong>bool</strong>：多条件组合查询
+<ul><li><em>must</em>：文档必须符合 must 中的所有条件，会影响相关性得分</li> <li><em>must_not</em>：文档必须不符合 must_not 中的所有条件，会影响相关性得分</li> <li><em>should</em>：文档可以符合 should 中的条件，会影响相关性得分</li> <li><em>filter</em>：只过滤符合条件的文档，不计算相关性得分</li></ul></li></ul> <h3 id="相关性算分"><a href="#相关性算分" class="header-anchor">#</a> 相关性算分</h3> <p>相关性算分在 share 之间是相互独立的，这意味着相同 Term 的 IDF 在不同分片上的算分是不同的。在文档数量不多的情况下，会导致相关性算分严重不准。</p> <p>解决思路有两个：</p> <ol><li>设置分片数为 1，从根本上解决此问题。考虑在文档数不多的情况下采用此方案；</li> <li>使用 DFS Query-then-Fetch 查询方式：在拿到所有文档后再重新计算一遍相关性算分，耗费更多的 CPU 与内存，性能低下，一般不建议使用；</li></ol> <p>ES 默认会采用相关性算分排序，用户可以通过设定 sorting 参数修改排序规则：</p> <div class="language-json extra-class"><pre class="language-json"><code>GET test/_search
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;sort&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;desc&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 使用多个</span>
+GET test/_search
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;sort&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;timestamp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;desc&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;_score&quot;</span><span class="token operator">:</span> <span class="token string">&quot;desc&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span>  <span class="token comment">// 相关性算分</span>
+    <span class="token punctuation">{</span><span class="token property">&quot;_doc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;desc&quot;</span><span class="token punctuation">}</span>     <span class="token comment">// 文档 ID</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.47b1b0a6.js" defer></script><script src="/assets/js/7.16c01cf3.js" defer></script><script src="/assets/js/2.20e9de90.js" defer></script><script src="/assets/js/23.732b7952.js" defer></script>
+  </body>
+</html>

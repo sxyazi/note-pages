@@ -1,0 +1,1 @@
+const e={key:"v-1e825d76",path:"/tools/alfred.html",title:"Alfred",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u63D2\u4EF6",slug:"\u63D2\u4EF6",children:[]}],filePathRelative:"tools/alfred.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

@@ -1,0 +1,1 @@
+const e={key:"v-03d18251",path:"/tools/sublime.html",title:"Sublime \u5E38\u7528\u63D2\u4EF6",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u5FEB\u6377\u952E",slug:"\u5FEB\u6377\u952E",children:[]}],filePathRelative:"tools/sublime.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

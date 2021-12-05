@@ -1,0 +1,1 @@
+const e={key:"v-62f5fcc7",path:"/php/net-file-size.html",title:"\u83B7\u53D6\u7F51\u7EDC\u6587\u4EF6\u5C3A\u5BF8",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"\u4F7F\u7528",slug:"\u4F7F\u7528",children:[]}],filePathRelative:"php/net-file-size.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

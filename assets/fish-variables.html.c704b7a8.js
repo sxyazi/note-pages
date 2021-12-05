@@ -1,0 +1,1 @@
+const t={key:"v-e12cba6c",path:"/tools/fish-variables.html",title:"Fish \u5BFC\u51FA\u73AF\u5883\u53D8\u91CF",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"tools/fish-variables.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{t as data};

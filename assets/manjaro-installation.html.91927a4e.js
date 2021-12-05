@@ -1,0 +1,1 @@
+const a={key:"v-41b46f93",path:"/tools/manjaro-installation.html",title:"\u5B89\u88C5 Manjaro \u540E\u8981\u505A\u7684\u4E8B",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"tools/manjaro-installation.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{a as data};

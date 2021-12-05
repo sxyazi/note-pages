@@ -1,0 +1,1 @@
+const e={key:"v-478d6060",path:"/linux/iptables-cheatsheet.html",title:"",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"linux/iptables-cheatsheet.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

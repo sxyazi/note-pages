@@ -1,0 +1,1 @@
+const a={key:"v-4a0c61e4",path:"/java/character-digit.html",title:"Character.digit",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"java/character-digit.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{a as data};

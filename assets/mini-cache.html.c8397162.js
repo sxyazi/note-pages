@@ -1,0 +1,1 @@
+const a={key:"v-34abc6e4",path:"/javascript/mini-cache.html",title:"\u5C0F\u7A0B\u5E8F\u7F13\u5B58",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"javascript/mini-cache.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{a as data};

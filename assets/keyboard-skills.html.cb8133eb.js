@@ -1,0 +1,31 @@
+import{e as n}from"./app.39480b94.js";import{_ as s}from"./plugin-vue_export-helper.21dcd24c.js";const a={},p=n(`<h1 id="\u952E\u76D8\u6280\u5DE7" tabindex="-1"><a class="header-anchor" href="#\u952E\u76D8\u6280\u5DE7" aria-hidden="true">#</a> \u952E\u76D8\u6280\u5DE7</h1><h2 id="karabiner-elements" tabindex="-1"><a class="header-anchor" href="#karabiner-elements" aria-hidden="true">#</a> Karabiner Elements</h2><p>\u4F7F\u7528 Karabiner Elements \u5C06\u4E0D\u5E38\u7528\u7684\u53F3 Command \u952E\u6620\u5C04\u4E3A F19 \u8D85\u7EA7\u952E\u3002</p><div class="language-json ext-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;title&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Take advantage of right command key&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Change right_command key to command+control+option+shift. (Post f19 key when pressed alone)&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;manipulators&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;basic&quot;</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;from&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;key_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;right_command&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;modifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+              <span class="token property">&quot;optional&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;any&quot;</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;to&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;left_shift&quot;</span><span class="token punctuation">,</span>
+              <span class="token property">&quot;modifiers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;left_command&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;left_control&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;left_option&quot;</span><span class="token punctuation">]</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span><span class="token punctuation">,</span>
+          <span class="token property">&quot;to_if_alone&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+            <span class="token punctuation">{</span>
+              <span class="token property">&quot;key_code&quot;</span><span class="token operator">:</span> <span class="token string">&quot;f19&quot;</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="alfred" tabindex="-1"><a class="header-anchor" href="#alfred" aria-hidden="true">#</a> Alfred</h2><p>\u5C06 Alfred \u7684\u547C\u51FA\u5FEB\u6377\u952E\u8BBE\u7F6E\u4E3A <code>F19</code> \u8D85\u7EA7\u952E\u3002</p><h2 id="thor" tabindex="-1"><a class="header-anchor" href="#thor" aria-hidden="true">#</a> Thor</h2><p>\u4F7F\u7528 Thor \u8BBE\u7F6E\u5E38\u89C1\u8F6F\u4EF6\u5FEB\u901F\u5207\u6362\u6309\u952E\uFF0C\u4EE5\u4E0B\u662F\u6211\u7684\u914D\u7F6E\uFF1A</p><ul><li>iTerm2 \u8BBE\u7F6E\u4E3A Option-1</li><li>Google Chrome \u8BBE\u7F6E\u4E3A Option-2</li><li>Visual Studio Code \u8BBE\u7F6E\u4E3A Option-Q</li><li>IntelliJ IDEA \u8BBE\u7F6E\u4E3A Option-W</li></ul>`,9);function t(e,o){return p}var c=s(a,[["render",t]]);export{c as default};

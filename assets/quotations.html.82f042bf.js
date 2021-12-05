@@ -1,0 +1,1 @@
+const t={key:"v-1069ec82",path:"/random/quotations.html",title:"\u5F15\u53E5",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"random/quotations.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{t as data};

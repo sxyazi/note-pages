@@ -1,0 +1,1 @@
+const e={key:"v-29d587c2",path:"/javascript/mini-error-feedback.html",title:"\u5C0F\u7A0B\u5E8F\u4E0A\u4F20\u9519\u8BEF\u65E5\u5FD7",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"javascript/mini-error-feedback.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

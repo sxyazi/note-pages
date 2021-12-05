@@ -1,0 +1,1 @@
+const t={key:"v-75f3eab7",path:"/python/everything-is-object.html",title:"\u4E07\u7269\u7686\u5BF9\u8C61",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"python/everything-is-object.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{t as data};

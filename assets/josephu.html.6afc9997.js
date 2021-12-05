@@ -1,0 +1,1 @@
+const e={key:"v-59150ea8",path:"/algorithm/josephu.html",title:"\u5FAA\u73AF\u94FE\u8868\uFF1AJosephu \u95EE\u9898",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"algorithm/josephu.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{e as data};

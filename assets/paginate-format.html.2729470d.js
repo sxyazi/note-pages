@@ -1,0 +1,1 @@
+const a={key:"v-9eeb19c8",path:"/php/paginate-format.html",title:"Laravel \u683C\u5F0F\u5316 paginate \u7ED3\u679C",lang:"en-US",frontmatter:{},excerpt:"",headers:[],filePathRelative:"php/paginate-format.md",git:{updatedTime:1638699407e3,contributors:[{name:"sxyazi",email:"sxyazi@gmail.com",commits:1}]}};export{a as data};
